@@ -95,25 +95,3 @@ const profesores = [
 //* Si la materia la da un solo profesor, no debe ser incluído en el arreglo.
 
 //? AYUDA: Investigar objeto SET puede ser de gran ayuda.
-
-function obtenerInformacion(profesores) {
-  const totalMaterias = [
-    ...new Set(profesores.flatMap((profesor) => profesor.materiasHabilitadas)),
-  ];
-
-  return totalMaterias
-    .map((materia) => {
-      const profesoresFiltrados = profesores.filter((profesor) =>
-        profesor.materiasHabilitadas.includes(materia)
-      );
-      const profesoresToReturn = profesoresFiltrados.map(
-        (profesor) => profesor.nombre
-      );
-
-      return {
-        materia,
-        profesores: profesoresToReturn,
-      };
-    })
-    .filter((item) => item.profesores.length > 1);
-}
