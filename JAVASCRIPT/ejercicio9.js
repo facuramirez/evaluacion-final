@@ -154,7 +154,7 @@ const personas = [
 //* En caso contrario, retornar un arreglo de objetos con el siguiente formato:
 //* [
 //*  {
-//*     nombres:
+//*     nombre:
 //*     cargo:
 //*     empresas:
 //*     totalDuracion:

@@ -87,5 +87,5 @@ const colegio = {
   ],
 };
 
-//* Crear una funcion que reciba el arreglo "colegio" establecido aquí arriba y retornar un booleano indicando si la cantidad total de alumnos indicada es igual a la sumatoria
+//* Crear una funcion que reciba el objeto "colegio" establecido aquí arriba y retornar un booleano indicando si la cantidad total de alumnos indicada es igual a la sumatoria
 //* de todos los alumnos de todas las catedras.
